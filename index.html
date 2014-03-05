@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>dotNav</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+	    <div class="dot dot-fillup">
+            <h2>Fillup</h2>
+	        <ul>
+	            <li class="current"><a href="#">Home</a></li>
+	            <li><a href="#">About</a></li>
+	            <li><a href="#">Products</a></li>
+	            <li><a href="#">Portfolio</a></li>
+	            <li><a href="#">Blog</a></li>
+	            <li><a href="#">Contact</a></li>
+	        </ul>
+	    </div>
+         <div class="dot dot-tooltip">
+            <h2>Tooltip</h2>
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="dot dot-stroke">
+            <h2>Stroke</h2>
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="dot dot-puff">
+            <h2>Puff</h2>
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript">
+        $('li').on('click', function (e) {
+            e.preventDefault();
+            var currClass = $(this).siblings('.current');
+            currClass.removeClass('current');
+            $(this).addClass('current');
+        });
+        </script>
+    </body>
+</html>
